@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoGames</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="img/logo.png" alt="Logo ShoGames">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Compra de <span class="page-title__emphasis">games</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/tarkov.jpg" alt="Capa jogo tarkov">
+                    </div>
+                    <p class="dashboard__item__name">Escape From Tarkov</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Comprar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/dayz.jpg" alt="Capa jogo dayz">
+                    </div>
+                    <p class="dashboard__item__name">DayZ</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Comprar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/eldenring.jpg" alt="Capa jogo Eldenring">
+                    </div>
+                    <p class="dashboard__item__name">Elden Ring</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Adquirido</a>
+                </li>
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
